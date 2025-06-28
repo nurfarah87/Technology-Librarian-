@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Technology Librarian</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --teal-1: #c8f0ee;
+      --teal-2: #a4e0dc;
+      --teal-3: #74c9c1;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, var(--teal-2), var(--teal-1));
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #575757;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    #about img {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+      height: auto;
+      border: 2px solid #000;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-box {
+      background: var(--teal-1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    .lang-toggle {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .lang-toggle button {
+      background: var(--teal-3);
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: 0.25s;
+    }
+
+    .lang-toggle button:hover {
+      background: #55b7ae;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="background: var(--teal-3); color: #fff; padding: 20px;">
+      About – Technology Librarian
+    </h1>
+    <p style="background: var(--teal-1); color: #000; padding: 10px;" id="subtitle">
+      Passionate about technology and digital innovation.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="ai-chatbot.html">AI Chatbot</a></li>
+      <li><a href="vr-experiences.html">VR Experiences</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ms')">Bahasa Melayu</button>
+  </div>
+
+  <main>
+    <section id="about" class="content-box">
+      <h2 id="about-title">About Me</h2>
+      <a href="https://ibb.co/4g4jkFSp">
+        <img src="https://i.ibb.co/93yqPp4W/Photo-from-Nur-Farah.jpg" alt="Nur Farah Image">
+      </a>
+      <p id="about-desc">
+        Hello! My name is <strong>NurFarah Farhana Binti Ismail</strong>, and I am a technology enthusiast and professional with a passion for digital innovation. I am currently focusing on Smart Healthcare Hub, where I aim to combine library science and technology to improve access to information.
+      </p>
+
+      <p>
+        This website introduces me as both a digital innovator and a committed future-ready librarian. The digital journey to reliable health information begins here—guided by a futuristic <strong>Technology Librarian</strong>, powered by AI, and designed to support users with speed, accuracy, and confidence.
+      </p>
+
+      <p>
+        Equipped with advanced digital skills and human-centered design, this platform provides real-time assistance through AI chatbot interaction, manages health content using modern metadata and classification systems, and enhances user experiences with immersive tools like Virtual Reality (VR) and interactive blogs. Accessibility is ensured with bilingual support and mobile responsiveness.
+      </p>
+
+      <p>
+        Ultimately, the <strong>Technology Librarian</strong> library website represents the future of health libraries: accessible, intelligent, and always ready to support research and wellness needs.
+      </p>
+    </section>
+
+    <section id="skills" class="content-box">
+      <h2 id="skills-title">Skills</h2>
+      <ul id="skills-list">
+        <li>Metadata Management</li>
+        <li>Digital Reference Services</li>
+        <li>Web Development & Design</li>
+        <li>Database Management</li>
+        <li>Content Management Systems (CMS)</li>
+        <li>Problem-Solving & Analytical Thinking</li>
+        <li>Project Management</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Tecnology Librarian – All rights reserved.
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'ms') {
+        document.getElementById('subtitle').textContent = 'Berminat dalam teknologi dan inovasi digital.';
+        document.getElementById('about-title').textContent = 'Tentang Saya';
+        document.getElementById('about-desc').innerHTML = 'Hai! Nama saya <strong>NurFarah Farhana Binti Ismail</strong>, seorang peminat teknologi yang berdedikasi dalam inovasi digital.';
+        document.getElementById('skills-title').textContent = 'Kemahiran';
+      } else {
+        document.getElementById('subtitle').textContent = 'Passionate about technology and digital innovation.';
+        document.getElementById('about-title').textContent = 'About Me';
+        document.getElementById('about-desc').innerHTML = 'Hello! My name is <strong>NurFarah Farhana Binti Ismail</strong>, and I am a technology enthusiast and professional with a passion for digital innovation. I am currently focusing on Smart Healthcare Hub, where I aim to combine library science and technology to improve access to information.';
+        document.getElementById('skills-title').textContent = 'Skills';
+      }
+    }
+  </script>
+
+</body>
+</html>

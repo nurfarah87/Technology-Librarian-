@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology Librarian – Smart Library</title>
+
+  <!-- Font Awesome for social-media icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    /* ----------  PALETTE  ---------- */
+    :root{
+      --teal-pastel:#B2DFDB;   /* body background  */
+      --teal-hover :#80CBC4;   /* nav-hover        */
+      --seagreen   :#20B2AA;   /* header / footer  */
+      --teal-light :#A7FFEB;   /* nav bar          */
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      background:var(--teal-pastel);
+      color:#333;
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.6;
+    }
+
+    /* ----------  HEADER  ---------- */
+    header{
+      background:var(--seagreen);
+      padding:20px;text-align:center;
+    }
+    header h1{color:#fff;margin-bottom:10px}
+    header p {color:#fff}
+
+    /* ----------  NAV  ---------- */
+    nav{background:var(--teal-light);overflow:hidden}
+    nav ul{
+      list-style:none;display:flex;justify-content:center;flex-wrap:wrap
+    }
+    nav li{margin:0 15px}
+    nav a{
+      display:block;color:#333;text-decoration:none;
+      padding:14px 20px;font-weight:bold;border-radius:4px
+    }
+    nav a:hover{background:var(--teal-hover);color:#fff}
+
+    /* ----------  LANGUAGE TOGGLE  ---------- */
+    .lang-toggle{text-align:center;margin-top:10px}
+    .lang-toggle button{
+      background:var(--seagreen);color:#fff;border:none;
+      padding:10px 20px;margin:10px;cursor:pointer;
+      font-weight:bold;border-radius:5px
+    }
+
+    /* ----------  MAIN  ---------- */
+    main{padding:20px}
+    section{margin-bottom:40px}
+    section h2{color:#00695C;margin-bottom:10px}
+
+    ul.services{list-style:disc;margin-left:20px}
+    ul.services li{margin-bottom:5px}
+
+    /* ----------  FOOTER  ---------- */
+    footer{
+      background:var(--seagreen);text-align:center;
+      padding:10px;font-size:.9em;color:#fff
+    }
+    .social-icons a{margin:0 10px;text-decoration:none}
+    .social-icons i{transition:transform .3s}
+    .social-icons i:hover{transform:scale(1.2)}
+  </style>
+</head>
+<body>
+
+  <!-- =====  HEADER  ===== -->
+  <header>
+    <h1 data-en="Professional Technology Librarian"
+        data-ms="Pustakawan Teknologi Profesional">
+      Professional Technology Librarian
+    </h1>
+    <p data-en="Your digital resources and technology support hub"
+       data-ms="Hab sumber digital dan sokongan teknologi anda">
+      Your digital resources and technology support hub
+    </p>
+  </header>
+
+   <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html"          id="nav-home">Home</a></li>
+      <li><a href="about.html"          id="nav-about">About</a></li>
+      <li><a href="services.html"       id="nav-services">Services</a></li>
+      <li><a href="resources.html"      id="nav-resources">Resources</a></li>
+    </ul>
+  </nav   
+      
+  <!-- =====  LANGUAGE TOGGLE  ===== -->
+  <div class="lang-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ms')">Bahasa Melayu</button>
+  </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 data-en="Contact Us" data-ms="Hubungi Kami">Contact Us</h2>
+      <p data-en="If you have any questions or need assistance..."
+         data-ms="Jika anda mempunyai sebarang pertanyaan atau memerlukan bantuan...">
+        If you have any questions...
+      </p>
+      <ul>
+        <li>Email: info@technolibrary.com</li>
+        <li>Phone: +60 165981073</li>
+        <li>WhatsApp: +60 165981073</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- =====  FOOTER  ===== -->
+  <footer>
+    <p data-en="© 2023 Technology Librarian. All rights reserved."
+       data-ms="© 2023 Pustakawan Teknologi. Semua hak cipta terpelihara.">
+      © 2023 Technology Librarian. All rights reserved.
+    </p>
+
+    <div class="social-icons" style="margin-top:10px">
+      <a href="https://wa.me/60165981073" target="_blank" style="color:#25D366">
+        <i class="fab fa-whatsapp fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ----------  LANGUAGE SWITCH SCRIPT  ---------- -->
+  <script>
+    function setLanguage(lang){
+      document.querySelectorAll('[data-en]').forEach(el=>{
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+
+</body>
+</html>

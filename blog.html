@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Librarian Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0fdfc;
+    }
+
+    .blog-section {
+      background: linear-gradient(to right, #a0d6d6, #20b2aa); /* pastel teal & lightseagreen */
+      padding: 60px 20px;
+      color: #ffffff;
+    }
+
+    .blog-container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .blog-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .blog-card p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ffffff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .blog-section h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+  <!-- NAVIGATION -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html" id="nav-home">Home</a></li>
+    </ul>
+  </nav>
+<body>
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="blog-container">
+      <h2>Blog & Insights</h2>
+
+      <div class="blog-grid">
+
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <h3>Exploring AI Tools in Healthcare</h3>
+          <p>Learn how artificial intelligence is transforming library services and enhancing user experiences through automation and personalization.</p>
+          <a href="https://www.digital-adoption.com/ai-in-healthcare/" target="_blank">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <h3>Digital Literacy Tips for Students</h3>
+          <p>Step-by-step guidance for students to improve their digital skills, research techniques, and tech confidence in the modern information era.</p>
+          <a href="https://edu.gcfglobal.org/en/topics/" target="_blank">Read More</a>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+          <h3>Future of VR in Healthcare</h3>
+          <p>Discover the potential of virtual reality to revolutionize library learning with immersive simulations and interactive tech tutorials.</p>
+          <a href="https://www.superdial.com/blog/virtual-reality-in-healthcare-a-new-frontier" target="_blank">Read More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Library Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #00796b;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #b2dfdb;
+    }
+
+    /* Services Section */
+    #services {
+      background-color: #b2dfdb;
+      padding: 40px 20px;
+      border-radius: 15px;
+      margin: 40px auto;
+      max-width: 1200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    #services h2 {
+      text-align: center;
+      color: #004d40;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+    }
+
+    .language-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .language-toggle button {
+      padding: 10px 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .language-toggle button:hover {
+      background-color: #004d40;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background-color: #e0f2f1;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid #004d40;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+      background-color: #b2dfdb;
+    }
+
+    .service-item h3 {
+      color: #00695c;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .service-item p {
+      color: #004d40;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html"          id="nav-home">Home</a></li>
+      <li><a href="about.html"          id="nav-about">About</a></li>
+      <li><a href="contact.html"        id="nav-contact">Contact</a></li>
+      <li><a href="resources.html"      id="nav-resources">Resources</a></li>
+      <li><a href="ai-chatbot.html"     id="nav-chatbot">AI Chatbot</a></li>
+      <li><a href="vr-experiences.html" id="nav-vr">VR Experiences</a></li>
+    </ul>
+  </nav>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="language-toggle">
+      <button onclick="toggleLanguage()">Tukar ke Bahasa Melayu / Switch to English</button>
+    </div>
+
+    <h2 id="section-title">Our Services</h2>
+    <div class="service-list">
+
+      <div class="service-item">
+        <h3 data-en="Technology Tutorials" data-my="Tutorial Teknologi">Technology Tutorials</h3>
+        <p data-en="Access a wide range of beginner-friendly and advanced tutorials covering digital tools, library technology systems, and e-resources management to enhance your tech skills."
+           data-my="Akses pelbagai tutorial mesra pemula dan lanjutan yang merangkumi alat digital, sistem teknologi perpustakaan, dan pengurusan e-sumber untuk meningkatkan kemahiran teknologi anda.">
+          Access a wide range...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="Digital Literacy Workshops" data-my="Bengkel Literasi Digital">Digital Literacy Workshops</h3>
+        <p data-en="Join scheduled workshops and webinars to improve digital literacy skills, from basic computer usage to advanced research tools navigation, focusing on technologies that support modern library practices."
+           data-my="Sertai bengkel dan webinar berjadual untuk meningkatkan kemahiran literasi digital, dari penggunaan komputer asas hingga navigasi alat penyelidikan lanjutan, dengan fokus pada teknologi dalam amalan perpustakaan moden.">
+          Join scheduled workshops...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="Online Tech Consultations" data-my="Konsultasi Teknologi Dalam Talian">Online Tech Consultations</h3>
+        <p data-en="Book personalized online sessions for tailored technical assistance, software usage, and support for managing digital library projects or tools."
+           data-my="Tempah sesi dalam talian peribadi untuk bantuan teknikal, penggunaan perisian, dan sokongan dalam mengurus projek perpustakaan digital.">
+          Book personalized online...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="Resource Library" data-my="Perpustakaan Sumber">Resource Library</h3>
+        <p data-en="Download free guides, templates, and educational resources specifically curated for students, educators, and librarians interested in technology integration and advancement."
+           data-my="Muat turun panduan, templat dan sumber pendidikan percuma yang disediakan khas untuk pelajar, pendidik dan pustakawan yang berminat dalam integrasi dan kemajuan teknologi.">
+          Download free guides...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="AI Chatbot Support" data-my="Sokongan Chatbot AI">AI Chatbot Support</h3>
+        <p data-en="Get instant answers to common technology-related queries through an integrated AI-powered chatbot available 24/7 for real-time support."
+           data-my="Dapatkan jawapan segera kepada pertanyaan berkaitan teknologi melalui chatbot AI yang tersedia 24/7.">
+          Get instant answers...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="Community Engagement" data-my="Penglibatan Komuniti">Community Engagement</h3>
+        <p data-en="Engage with peers and professionals through online forums, feedback groups, and tech interest communities to foster collaboration, continuous learning, and sharing of ideas related to technology and digital literacy."
+           data-my="Berinteraksi dengan rakan dan profesional melalui forum dalam talian, kumpulan maklum balas, dan komuniti minat teknologi untuk menggalakkan kerjasama dan pembelajaran berterusan.">
+          Engage with peers...
+        </p>
+      </div>
+
+      <div class="service-item">
+        <h3 data-en="Virtual Reality (VR) Experiences" data-my="Pengalaman Realiti Maya (VR)">Virtual Reality (VR) Experiences</h3>
+        <p data-en="Immerse yourself in a modern tech library experience through Virtual Reality (VR). Participate in virtual workshops, immersive library tours, and explore simulations for learning, showcasing the integration of VR into modern library settings for improved tech literacy."
+           data-my="Alami pengalaman perpustakaan teknologi moden melalui Realiti Maya (VR). Sertai bengkel maya, lawatan perpustakaan interaktif dan penerokaan simulasi pembelajaran.">
+          Immerse yourself...
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'my' : 'en';
+      document.getElementById('section-title').textContent = currentLang === 'en' ? 'Our Services' : 'Perkhidmatan Kami';
+
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events Calendar - Technology Librarian</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #a0d6d6, #20b2aa);
+      color: #333;
+    }
+
+    .calendar-section {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: #d7f4f3;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 2px solid #20b2aa;
+    }
+
+    .calendar-section h2 {
+      text-align: center;
+      color: #116f6d;
+      margin-bottom: 30px;
+    }
+
+    .event-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .event-item {
+      background-color: #ffffffcc;
+      border-left: 5px solid #20b2aa;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .event-item h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+      color: #0d4c4b;
+    }
+
+    .event-item .date {
+      font-weight: bold;
+      color: #0e6663;
+    }
+
+    .event-item p {
+      margin: 5px 0 0;
+    }
+
+    .external-link {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .external-link a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #20b2aa;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .external-link a:hover {
+      background-color: #168b89;
+    }
+
+    @media (max-width: 600px) {
+      .calendar-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="calendar-section">
+    <h2>Featured Events & Celebrations</h2>
+    <div class="event-list">
+
+      <div class="event-item">
+        <h3>Mental Health Awareness Month</h3>
+        <div class="date">May</div>
+        <p>Raise awareness about mental health and promote well-being with workshops and safe discussions.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>National Library Week</h3>
+        <div class="date">April</div>
+        <p>Celebrate the impact of libraries in communities through activities, showcases, and appreciation events.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>Teen Tech Week</h3>
+        <div class="date">March</div>
+        <p>Empowering teens with digital skills through coding, VR demos, and information literacy programs.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>World Braille Day</h3>
+        <div class="date">January 4</div>
+        <p>Promote accessible reading and writing for the visually impaired through Braille resources and tech.</p>
+      </div>
+
+      <div class="event-item">
+        <h3>American Heart Month</h3>
+        <div class="date">February</div>
+        <p>Collaborate with health experts to raise awareness on heart health and provide useful educational content.</p>
+      </div>
+
+    </div>
+
+    <div class="external-link">
+      <a href="https://programminglibrarian.org/events-calendar" target="_blank">
+        View More Library Events
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
